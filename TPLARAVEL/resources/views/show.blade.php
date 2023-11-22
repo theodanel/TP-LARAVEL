@@ -8,11 +8,17 @@
         </div>
         
         <div class="w-3/5 h-1/2">
-        <h1 class=" text-gray-600 text-3xl">{{ $game->name }}</h1> <br>
+
+        <h1 class=" text-gray-600 text-3xl">{{ $game->name }} |</h1> <br>
+        @if ($game->tag_id)
+        Catégories : {{ $game->tag->name }} 
+        @endif 
+
         <p class="text-sm my-3"></p>
         {{ $game->synopsis }}
         
         <h3> {{$game->price}} euros </h3>
+
         {{-- @if ($movie->category_id)
         Tags : {{ $movie->category->name }} 
         @endif --}}
