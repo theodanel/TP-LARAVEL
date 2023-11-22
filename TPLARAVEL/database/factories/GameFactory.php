@@ -25,7 +25,7 @@ class GameFactory extends Factory
             'outofstock' => fake()->boolean(),
             'slug' => fake()->slug(),
             'synopsis' => fake()->text(),
-            'tag_id' => Tag::factory(),
+
 
         ];
     }
