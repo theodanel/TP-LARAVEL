@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,6 +25,7 @@ class GameFactory extends Factory
             'outofstock' => fake()->boolean(),
             'slug' => fake()->slug(),
             'synopsis' => fake()->text(),
+            'tag_id' => Tag::factory(),
 
         ];
     }
