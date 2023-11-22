@@ -18,7 +18,7 @@ class Game extends Model
     foreach ($tag->tags as $tag) {
         $games = Game::find(1)->tags()->orderBy('name')->get();
 
-        return $this->belongsToMany(Tag::class, 'tag_game');
+        return $this->belongsToMany(Tag::class, 'game_tag');
         }
     }
 }
