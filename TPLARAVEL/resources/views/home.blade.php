@@ -4,7 +4,7 @@
 {{-- Le contenu de la section content va prendre
     la place du yield content --}}
 @section('content')
-    <h1 class="text-3xl text-center mb-3">Liste des jeux</h1>
+        <h1 class="text-3xl text-center mb-3">Liste des jeux</h1>
 
     <div class="flex flex-wrap -mx-3 gap-3">
         @foreach ($games as $game)

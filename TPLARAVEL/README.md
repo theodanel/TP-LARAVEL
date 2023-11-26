@@ -11,3 +11,9 @@ Modifier le nom de la base de données dans Database
 Changer le MyIsam par InnoDB dans phpmyadmin
 
 Faire un php artisan serve
+
+Pour créer un Controller,Model
+php artisan make:controller HomeController
+
+Pour créer un migration 
+php artisan make:migration create_flights_table
